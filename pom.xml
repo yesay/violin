@@ -6,7 +6,13 @@
 	<groupId>cn.suius</groupId>
 	<artifactId>violin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<!--web依赖persistence；persistence依赖model-->
+	<modules>
+		<module>web</module>
+		<module>persistence</module>
+		<module>model</module>
+	</modules>
+	<packaging>pom</packaging>
 
 	<name>violin</name>
 	<description>Spring Boot Advance</description>
